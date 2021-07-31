@@ -1,0 +1,150 @@
+*, ::after, ::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Codec Pro', sans-serif;
+    font-weight: 300;
+}
+
+body{
+    background: var(--dark);
+}
+
+:root{
+    --white: #F5F5F5;
+    --dark: #313234;
+    --blue: #1A73E8;
+    --linear: linear-gradient(91.86deg, #4621DA -7.59%, #9D246D -2.48%, #D62626 115.02%, #DE841F 115.03%, #B58237 115.04%)
+}
+
+a{
+    text-decoration: none;
+    color: var(--blue);
+}
+
+
+/* Estilização do formulário */
+.login-wrapper{
+    width: 400px;
+    height: 584px;
+    background-color: var(--white);
+    border-radius: .5rem;
+    padding: 3rem;
+    margin: 10rem auto;
+    position: relative;
+}
+
+.login__title{
+    font-weight: 500;
+    font-size: 2rem;
+    color: var(--dark);
+    margin-bottom: 48px;
+}
+
+.gradient-border{
+    background: var(--linear);
+    border-radius: .3rem;
+    margin: .5rem 0 1rem 0;
+    padding: 1px;
+}
+
+.login__input{
+    display: block;
+    width: 306px;
+    max-width: 100%;
+    height: 46px;
+    border-radius: .25rem;
+    padding: 0 8px;
+    font-size: 1rem;
+    letter-spacing: .04rem;
+    color: var(--dark);
+    background: var(--white);
+    border: none;
+    outline: 0;
+}
+
+.login__input:focus{
+    background: #eee
+}
+
+#login-pass{
+    font-weight: 400;
+    letter-spacing: .1rem;
+}
+
+.login__label{
+    color: var(--dark);
+}
+
+.if-forgot{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    font-size: 16px;
+}
+
+.login__remember{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login__button{
+    width: 304px;
+    height: 46px;
+    border: none;
+    background: var(--linear);
+    color: var(--white);
+    font-size: 1.25rem;
+    border-radius: .25rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.account-create{
+    font-size: 16px;
+    display: block;
+    margin-bottom: 64px;
+}
+
+.options-section__line{
+    width: 400px;    
+    height: 1px;
+    background: var(--linear);
+    position: absolute;
+    right: 0;
+    bottom: 142px;
+}
+
+
+.login-or{
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.option__container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.option-login{
+    width: 144px;
+    height: 32px;
+    border: .5px solid var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-radius: .25rem;
+    border: none;
+    background: var(--white);
+}
+
+.option-login > a{
+    color: var(--dark);
+}
+
+
+

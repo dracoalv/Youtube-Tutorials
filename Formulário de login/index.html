@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="login-wrapper">                         <!-- Conteúdo que segura todos os elementos -->
+
+        <h2 class="login__title">Login</h2>
+        
+        <label class="login__label" for="login-user">E-mail or username</label>                 <!-- Inputs de texto -->
+        <div class="gradient-border">                       
+            <input type="text" id="login-user" class="login__input">
+        </div>
+        <label class="login__label" for="login-pass">Password</label>
+        <div class="gradient-border">
+            <input type="password" id="login-pass" class="login__input">
+        </div>
+
+        <div class="if-forgot">                     <!-- Checkbox e cta 'esqueceu sua senha' -->
+            <div class="login__remember">
+                <input class="remember" type="checkbox" id="remember-checkbox" name="remember">
+                <label class="contact-section__form-input-term-label" for="hemember">Remember me</label>
+            </div>
+            <a href="#">Forgot password?</a>
+        </div>
+
+        <button class="login__button">Sign in</button>                  <!-- Botão -->
+        <span class="account-create">Don't have an account? <a href="#">Register now.</a></span>                    <!-- Cta para criar conta -->
+
+        <div class="options-section__line"></div>                       <!-- Linha divisória -->
+
+        <span class="login-or">Or sign in with</span>                   <!-- Opções de login com google e github -->
+
+        <div class="option__container">
+            <div class="gradient-border">
+                <div class="option__container--google option-login">
+                    <img src="svgs/google.svg" alt="Goggle Icon">
+                    <a href="#">Google</a>
+                </div>
+            </div>
+            <div class="gradient-border">
+                <div class="option__container--github option-login">
+                    <img src="svgs/github.svg" alt="Github Icon">
+                    <a href="#">Github</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
