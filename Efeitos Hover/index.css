@@ -10,37 +10,53 @@ body{
   background: #323232;
 }
 
-.container{
-  width: 650px;
-  height: 100px;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  margin: 5%;
+.section{
+  width: 700px;
+  
+  margin: 5% 5% 0 5%;
   padding: 0 32px;
 
-  border: 1px solid white;
+  font-family: 'Arial';
+  font-weight: 300;
+
+  color: white;
+  letter-spacing: .04em;
+}
+
+.container{
+  width: 700px;
+  height: auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+
+  margin: 5% 5% 15% 5%;
+  padding: 0 32px;
 }
 
 .button{
-  display: block;
+  display: flex;
+  justify-content: center;
 
   position: relative;
 
-  margin: 0 32px;
-  padding: 8px 40px;
+  margin: 0;
+  padding: 12px 0;
 
-  font-family: Inter;
+  font-family: 'Inter';
   font-size: 21px;
   line-height: 28px;
   font-weight: 300;
 
-  border: 1px solid blueviolet;
   color: #F6F6F6;
+  border: 1px solid blueviolet;
 
   text-decoration: none;
+
+  overflow: hidden;
+
+  cursor: pointer;
 }
 
 .button::before{
@@ -49,8 +65,6 @@ body{
   height: 100%;
 
   position: absolute;
-  top: 0%;
-  left: 0%;
 
   background: blueviolet;
 
@@ -58,14 +72,277 @@ body{
   z-index: -1;
 }
 
-.effect::before{
+/*EFEITO DE HOVER SIMPLES*/
+/* First simples - Button 1*/
+.simples1::before{
   width: 0;
   height: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+
+  top: 0%;
+  left: 0%;
 }
 
-.effect:hover::before{
+.simples1:hover::before{
   width: 100%;
+}
+/*========================*/
+
+/* First simples - Button 2*/
+.simples2::before{
+  width: 0;
+  height: 100%;
+
+  bottom: 0;
+  right: 0;
+}
+
+.simples2:hover::before{
+  width: 100%;
+}
+/*========================*/
+
+/* First simples - Button 3*/
+.simples3::before{
+  width: 100%;
+  height: 0%;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.simples3:hover::before{
+  height: 325%;
+}
+/*========================*/
+
+/* First simples - Button 4*/
+.simples4::before{
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.simples4:hover::before{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+/*========================*/
+/*========================*/
+
+/* First simples - Button 5*/
+.simples5::before{
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 250ms ease-in;
+}
+
+.simples5:hover::before{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+/*========================*/
+
+/* First simples - Button 6*/
+.simples6::before{
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  left: 0;
+
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 250ms ease-in;
+}
+
+.simples6:hover::before{
+  transform: scaleY(1);
+  transform-origin: top;
+}
+/*========================*/
+
+/*EFEITO DE HOVER INTERMEDIÁRIO*/
+
+.button-inter{
+  display: flex;
+  justify-content: center;
+
+  position: relative;
+
+  margin: 0;
+  padding: 12px 0;
+
+  font-family: 'Inter';
+  font-size: 21px;
+  line-height: 28px;
+  font-weight: 300;
+
+  color: #F6F6F6;
+  border: 1px solid rgb(138, 43, 226);
+
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+/*EFEITO DE HOVER INTERMEDIÁRIO*/
+/* First intermediário - Button 1*/
+.intermediario1:hover{
+  background: #730bec url(pixel.png);
+  background-size: 100%;
+
+  transition-delay: 0.8s;
+  animation: animate1 0.8s steps(8) forwards;
+}
+
+@keyframes animate1{
+  0%{
+    background-position-y: 0;
+  }
+  100%{
+    background-position-y: -480px;
+  }
+}
+/*========================*/
+
+/* First intermediário - Button 2*/
+.intermediario2 span{
+  position: relative;
+  z-index: 3;
+}
+
+.intermediario2::before{
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: -1px;
+
+  width: calc(100% + 2px);
+  height: calc(100% - 12px);
+
+  background: #323232;
+
+  transition: .5s ease-in-out;
+  transform: scaleY(1);
+}
+
+.intermediario2:hover::before{
+  transform: scaleY(0);
+}
+
+.intermediario2::after{
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: 6px;
+
+  width: calc(100% - 12px);
+  height: calc(100% + 4px);
+
+  background: #323232;
+
+  transition: .5s ease-in-out;
+  transform: scaleX(1);
+}
+
+.intermediario2:hover::after{
+  transform: scaleX(0);
+}
+/*========================*/
+
+/* First intermediário - Button 3*/
+.intermediario3{
+  position: relative;
+  overflow: hidden;
+
+  transition: .2s;
+}
+
+.intermediario3:hover{
+  color: #eee;
+  background: #8A2BE2;
+  box-shadow: 0 0 10px #8A2BE2, 0 0 15px #5B2BE2, 0 0 30px #730bec;  
+
+  transition-delay: 1s;
+}
+
+.intermediario3 span{
+  position: absolute;
+  display: block;
+}
+
+.intermediario3 span:nth-child(1){
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(88.89deg, transparent, #5B2BE2);
+}
+
+.intermediario3:hover span:nth-child(1){
+  left: 100%;
+  transition: 1s;
+}
+
+.intermediario3 span:nth-child(2){
+  right: 0;
+  top: -100%;
+
+  width: 2px;
+  height: 100%;
+
+  background: linear-gradient(181.44deg, transparent, #5B2BE2);
+}
+
+.intermediario3:hover span:nth-child(2){
+  top: 100%;
+  transition: 1s;
+  transition-delay: .25s;
+}
+
+.intermediario3 span:nth-child(3){
+  bottom: 0;
+  right: -100%;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(269.44deg, transparent, #5B2BE2);
+}
+
+.intermediario3:hover span:nth-child(3){
+  right: 100%;
+  transition: 1s;
+  transition-delay: .5s;
+}
+
+.intermediario3 span:nth-child(4){
+  left: 0;
+  bottom: -100%;
+
+  width: 2px;
+  height: 100%;
+
+  background: linear-gradient(359.88deg, transparent, #5B2BE2);
+}
+
+.intermediario3:hover span:nth-child(4){
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: .75s;
 }
