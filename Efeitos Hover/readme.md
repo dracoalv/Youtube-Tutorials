@@ -9,16 +9,38 @@ Este repositório contem um arquivo html e css que usarei para criar os efeitos,
 <br>
 <br>
 
-  ```html
-  <div class="container">
-    <a class="button effect1">Button</a>
-    <a class="button effect2">Button</a>
-    <a class="button effect3">Button</a>
+```html
+<body>
+  <!--Efeitos simples-->  
+  <div class="simple section">
+    <h1>Simples</h1>
   </div>
+  <div class="container">
+    <a class="button simples1">Button 1</a>
+    <a class="button simples2">Button 2</a>
+    <a class="button simples3">Button 3</a>
+    <a class="button simples4">Button 4</a>
+    <a class="button simples5">Button 5</a>
+    <a class="button simples6">Button 6</a>
+  </div>
+
+    <!--Efeitos intermediários-->  
+  <div class="intermediate section">
+    <h1>Intermediário</h1>
+  </div>
+  <div class="container">
+    <a class="button-inter intermediario1">Button 1</a>
+    <a class="button-inter intermediario2"><span>Button 2</span></a>
+    <a class="button-inter intermediario3">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      Button 3
+    </a>
+  </div>
+</body>
   ```
-
-<br>
-
 #
 
 ### Conteúdo em vídeo.

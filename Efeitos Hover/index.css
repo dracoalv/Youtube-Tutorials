@@ -194,8 +194,9 @@ body{
   border: 1px solid rgb(138, 43, 226);
 
   text-decoration: none;
-
   cursor: pointer;
+
+  transition: .5s;
 }
 
 /*EFEITO DE HOVER INTERMEDIÁRIO*/
