@@ -9,9 +9,8 @@ Este repositório contem um arquivo html e css que usarei para criar os efeitos,
 <br>
 <br>
 <a href="https://res.cloudinary.com/dkjm6gj24/image/upload/v1627940651/Youtube%20Channel/Hover%20Effects/pixel_qwmcwc.png" target="_blank">Imagem</a>
-<br>
-<br>
 
+#
 HTML code
 ```html
 <!DOCTYPE html>
