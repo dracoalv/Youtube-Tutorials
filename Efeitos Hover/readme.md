@@ -1,5 +1,3 @@
-# Hover Effects
-
 ## Introdução
 <br>
 Sejam bem vindos ao tutorial de hover personalizados para iniciantes em CSS, eu sou o **Marcelo Alves** e vou compartilhar alguns efeitos bem legais para se usar em seus projetos Web.
