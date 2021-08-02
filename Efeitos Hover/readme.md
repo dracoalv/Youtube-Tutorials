@@ -45,6 +45,41 @@ Este repositório contem um arquivo html e css que usarei para criar os efeitos,
 </body>
 </html>
   ```
+
+  ```css
+  *,
+  *::before,
+  *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  body{
+    background: #323232;
+  }
+
+  .title{  
+    margin: 5%;
+
+    font-family: 'Arial';
+    font-weight: 300;
+
+    color: white;
+    letter-spacing: .04em;
+  }
+
+  .container{
+    width: 700px;
+    height: auto;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+
+    margin: 5%; 
+  }
+  ```
 #
 
 ### Conteúdo em vídeo.
