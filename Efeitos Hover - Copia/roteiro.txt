@@ -1,0 +1,72 @@
+[bocejo]
+
+#9 Efeitos de hover para botões desde efeitos simples até efeitos mais elaborados com CSS puro.
+
+Bom, primeiramente quero deixar claro que se você entender o conceito de como fazer cada um desses efeitos você estará apto a fazer qualquer efeito que vier a sua cabeça, ou pelo menos quase.
+
+Então eu comecei aqui com uns efeitos mais simples e fui aumentando a complexidade.
+
+Lembrando que não existe relação entre complexidade e efetividade, ou seja, algo simples pode ser bem mais eficiente e agradável do que algo complexo e chamativo e vice-versa, vai sempre depender do contexto.
+
+Então sem mais delongas bora pro conteúdo.
+
+Aqui abaixo na descrição do vídeo, eu vou ta deixando um Link do repositório no Github, contendo todo o código, inclusive também separei um readme, ou seja um arquivo de leitura contendo o código html pronto, para o caso de você querer estilizar comigo do 0.
+
+Agora, caso você ja um conhecimento básico de html e css, pode pular para o minuto XX:XX
+
+--------------------------------
+
+#Conteúdo do HTML.
+
+Começando aqui o html então, vou usar o emmet pra iniciar o documento, pressionando tab eu ja pulo automáticamente para Título, altero para Hover Effects, pressiono tab novamente pra ir para o Body, e começo aqui criando um H1 que vai ter uma class "Title" e passo como conteúdo a escrita 'Hover Effects'.
+
+Logo abaixo eu crio uma div que vai ter uma class "Container", dentro dela eu vou criar 9 âncoras que serão os meus botões, cada ancora vai herdar a mesma classe 'Button' e uma outra classe unica, então vou usar item seguido de um número para cada uma delas.
+
+Aqui nas 3 últimas âncoras, eu vou usar uma classe diferente pra elas pra escrever menos código no css, eu vou ta explicando melhor daqui a pouco.
+
+------------------------------------------
+
+#CSS
+## Estilizações básicas
+
+Aqui primeiramente eu vou resetar os margins e paddings padrões do browser, e também alterar o "box-sizing" para 'border-box' pra que eu possa ter um maior controle de todos os elementos ao usar propriedades como widths ou paddings por exemplo.
+
+Somente afins estéticos eu vou colocar um background escuro no body.
+
+Então como eu dei uma classe para este título eu posso chamar ele no css com .Title, e passo um margin 5%, também posso adicionar uma font básica sem serifa, um peso de 300, cor branca, e um espaçamento maior entre as letras.
+
+Agora no container, que seria a div que está segurando todos os botões, aplico um width de 700px, um height automático, atribuo a propriedade display: grid, e com isso surgem novas funcionalidades, como a grid-template-columns que eu posso atribuir 1fr 1fr 1fr que vai dividir os elementos que está dentro da div container, em 3 colunas iguais, visto que eu estou repetindo os valores, eu posso usar uma função para chegar ao mesmo resultado, assim substituindo 1fr 1fr 1fr por repeat(3, 1fr), onde o primeiro argumento é o número de repetições e o segundo argumento é o valor das colunas, onde a  vírgula separa o primeiro argumento do segundo.
+
+O display grid também me da acesso a propriedade gap, que me permite usar um espaçamento inteligente apenas entre os botões, nesse caso eu vou usar 32px.
+
+
+Agora eu vou estilizar a classe Button, que esta armazenada nos 6 primeiros botões.
+
+Vou começar usando a propriedade display: flex, que como o display:grid vai me oferecer novos recursos, como por exemplo, o justify-content: center, que vai centralizar o texto ao centro do botão.
+
+vou usar a propriedade position: relative; para que ela se torne referência para os elementos parentes que estiverem com a propriedade position: absolute.
+
+também vou adicionar um padding de 12px para cima e para baixo, e 0 para os lados.
+
+uma cor branca para o texto.
+vou atribuir uma borda para os botões, então border: 1px solid #blueviolet; 
+
+Vou estilizar a fonte do texto,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
