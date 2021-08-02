@@ -46,9 +46,7 @@ HTML code
 </body>
 </html>
   ```
-  <br>
-  <br>
-  
+
 #  
 CSS code
 ```css
