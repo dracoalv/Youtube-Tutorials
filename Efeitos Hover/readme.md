@@ -12,6 +12,7 @@ Este repositório contem um arquivo html e css que usarei para criar os efeitos,
 <br>
 <br>
 
+HTML code
 ```html
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -45,7 +46,9 @@ Este repositório contem um arquivo html e css que usarei para criar os efeitos,
 </body>
 </html>
   ```
-
+  <br>
+  <br>
+CSS code
 ```css
 *,
 *::before,
