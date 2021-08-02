@@ -7,7 +7,7 @@ Sejam bem vindos ao tutorial de hover personalizados para iniciantes em CSS, eu 
 <br>
 Este repositório contem um arquivo html e css que usarei para criar os efeitos, caso queira utilizar para acompanhar o tutorial basta fazer o clone do repositório em sua maquina, ou acompanhar o seguinte raciocínio.
 <br>
-
+<br>
 <a href="https://res.cloudinary.com/dkjm6gj24/image/upload/v1627940651/Youtube%20Channel/Hover%20Effects/pixel_qwmcwc.png" target="_blank">Imagem</a>
 
 <br>
