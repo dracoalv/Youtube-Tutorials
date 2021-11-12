@@ -1,0 +1,125 @@
+/* =========== */
+/* resets globais */ 
+*,
+*::after,
+*::before{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #313131;
+}
+
+img{
+  max-width: 100%;
+}
+
+/* =========== */
+/* layout global*/
+#logo{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.container{
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.header{
+  width: 100%;
+  height: 72px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-ul{
+  display: flex;
+  gap: 50px;
+}
+
+/* =========== */
+/* começa aqui */
+
+.hero-container{
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;  
+}
+
+.hero-banner{  
+  display: flex;
+
+  width: 300%;
+  height: 400px;  
+}
+
+.hero-banner img{
+  max-width: 100%;
+  width: 1000px;
+  max-height: 400px;
+  object-fit: cover;
+}
+
+.slides-radio{
+  display: flex;
+}
+
+.bg-slide{
+  transition: .8s;  
+}
+
+.banner-nav{
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.banner-control{
+  width: 48px;
+  height: 8px;
+
+  background: #ffffff;
+  opacity: .5;
+
+  cursor: pointer;
+}
+
+input{
+  display: none;
+}
+
+.banner-control:hover{
+  transition: .3s;
+  opacity: 1;
+}
+
+#bg1:checked ~ .bg1{
+  margin-left: 0;
+}
+
+#bg2:checked ~ .bg1{
+  margin-left: -33.33%;
+}
+
+#bg3:checked ~ .bg1{
+  margin-left: -66.66%;
+}
