@@ -20,27 +20,7 @@ HTML code
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-    </header>
-
-    <div class="hero-container">
-      <div class="hero-banner">
-        <div class="slides-radio">
-          <input type="radio" name="bg-slide" id="bg1" checked>
-          <input type="radio" name="bg-slide" id="bg2">
-          <input type="radio" name="bg-slide" id="bg3">
-          
-          <div class="bg-slide bg1"><img src="images/building.jpg" alt="Plano de fundo"></div>
-          <div class="bg-slide bg2"><img src="images/building-2.jpg" alt="Plano de fundo"></div>
-          <div class="bg-slide bg3"><img src="images/building-3.jpg" alt="Plano de fundo"></div>
-        </div>
-        <nav class="banner-nav">
-          <label for="bg1" class="banner-control"></label>
-          <label for="bg2" class="banner-control"></label>
-          <label for="bg3" class="banner-control"></label>
-        </nav>
-      </div>
-    </div>
-    
+    </header>    
   </div>
   ```
 
