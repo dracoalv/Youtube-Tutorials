@@ -1,6 +1,3 @@
-# Roteiro
-<br>
-
 ## Slider sem JS
 
 #
