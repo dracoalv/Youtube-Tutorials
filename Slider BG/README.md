@@ -1,6 +1,5 @@
 ## Slider sem JS
 
-#
 
 Se você é iniciante em desenvolvimento web e ainda não se familiarizou com Javascript fica tranquilo, existe muitas possibilidades de desenvolvimento sem usar JS.
 
