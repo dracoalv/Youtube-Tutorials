@@ -7,4 +7,4 @@ E neste vídeo eu vou criar este Slider com apenas HTML & CSS.
 
 ### Conteúdo em vídeo.
 
-<a href="">Ir para o vídeo tutorial</a>
+<a href="#">Ir para o vídeo tutorial</a>
